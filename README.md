@@ -3,7 +3,7 @@ Data set transformed from the *Human Activity Recognition* project, and associat
 
 This repository consist of three files.
 
-1. humanact_reduced.csv: a data set obtained from the *Human Activity Recognition* project and transformed to aggregate, in one single dataset, the measurements for all the subjects and activities observed in this project. Further, the dataset reduces the multiple observations of each activity in each subject to one observation per activity and subject by averaging the corresponding values.  
+1. humanact_reduced.txt: a data set obtained from the *Human Activity Recognition* project and transformed to aggregate, in one single dataset, the measurements for all the subjects and activities observed in this project. Further, the dataset reduces the multiple observations of each activity in each subject to one observation per activity and subject by averaging the corresponding values.  
 
 2. CodeBook.md: a text document describing the data set and the variables contained in it.
 
