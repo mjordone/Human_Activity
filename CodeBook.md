@@ -1,11 +1,11 @@
 Code Book
 =========
 
-The data set *humanact_reduced.txt* contains an aggregated and reduced version of the data sets provided by the *Human Activity Recognition* project. As the researchers describe it, the experiments in this project were carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.
+The data set *humanact_reduced.txt* contains an aggregated and reduced version of the data sets provided by the *Human Activity Recognition* project. As the researchers describe it, the experiments in this project were carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.  
 
-The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.  
 
-The *humanact_reduced.txt* data set aggregates the data from the *test group* and the *train group* for each of the six activities. The original data sets contained more than one measurment per subject and activity. The *humanact_reduced.txt* data set reduces this information by reporting the average measurment per subject and activity. 
+The *humanact_reduced.txt* data set aggregates the data from the *test group* and the *train group* for each of the six activities. The original data sets contained more than one measurment per subject and activity. The *humanact_reduced.txt* data set reduces this information by reporting the average measurment per subject and activity.   
 
 All the  variables in the dataset and the information about them were obtained from the *Human Activity Recognition database*. A full description of the project and the raw data set can be obtained at:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
@@ -14,16 +14,16 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 Identification Variables 
 ========================
 
-Two variables are considered *identification variables*:
+Two variables are considered *identification variables*:  
 
-- subject: identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
-- activities: a factor identifying the type of activity observed. Its range is from 1 to 6, and their values are: 
-1 WALKING
-2 WALKING_UPSTAIRS
-3 WALKING_DOWNSTAIRS
-4 SITTING
-5 STANDING
-6 LAYING
+- subject: identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.  
+- activities: a factor identifying the type of activity observed. Its range is from 1 to 6, and their values are:   
+1 WALKING  
+2 WALKING_UPSTAIRS  
+3 WALKING_DOWNSTAIRS  
+4 SITTING  
+5 STANDING  
+6 LAYING  
 
 =================
 Feature Variables 
@@ -36,39 +36,39 @@ Subsequently, the body linear acceleration and angular velocity were derived in 
 Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing freqBodyAcc-XYZ, freqBodyAccJerk-XYZ, freqBodyGyro-XYZ, freqBodyAccJerkMag, freqBodyGyroMag, freqBodyGyroJerkMag. (Note the 'freq' to indicate frequency domain signals). 
 
 These signals were used to estimate variables of the feature vector for each pattern:  
-'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.  
 
-timeBodyAcc-XYZ
-timeGravityAcc-XYZ
-timeBodyAccJerk-XYZ
-timeBodyGyro-XYZ
-timeBodyGyroJerk-XYZ
-timeBodyAccMag
-timeGravityAccMag
-timeBodyAccJerkMag
-timeBodyGyroMag
-timeBodyGyroJerkMag
-freqBodyAcc-XYZ
-freqBodyAccJerk-XYZ
-freqBodyGyro-XYZ
-freqBodyAccMag
-freqBodyAccJerkMag
-freqBodyGyroMag
-freqBodyGyroJerkMag
+timeBodyAcc-XYZ  
+timeGravityAcc-XYZ  
+timeBodyAccJerk-XYZ  
+timeBodyGyro-XYZ  
+timeBodyGyroJerk-XYZ  
+timeBodyAccMag  
+timeGravityAccMag  
+timeBodyAccJerkMag  
+timeBodyGyroMag  
+timeBodyGyroJerkMag  
+freqBodyAcc-XYZ  
+freqBodyAccJerk-XYZ  
+freqBodyGyro-XYZ  
+freqBodyAccMag  
+freqBodyAccJerkMag  
+freqBodyGyroMag  
+freqBodyGyroJerkMag  
 
-The set of variables that were estimated from these signals are: 
+The set of variables that were estimated from these signals are:   
 
-mean: Mean value
-std: Standard deviation
-meanFreq: Weighted average of the frequency components to obtain a mean frequency
+mean: Mean value  
+std: Standard deviation  
+meanFreq: Weighted average of the frequency components to obtain a mean frequency  
 
-Additional vectors obtained by averaging the signals in a signal window sample. These are used on the 'angle' variable:
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the 'angle' variable:  
 
-gravityMean
-timeBodyAccMean
-timeBodyAccJerkMean
-timeBodyGyroMean
-timeBodyGyroJerkMean
+gravityMean  
+timeBodyAccMean  
+timeBodyAccJerkMean  
+timeBodyGyroMean  
+timeBodyGyroJerkMean  
 
 ===========================
 Complete list of variables
